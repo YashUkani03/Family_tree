@@ -183,7 +183,7 @@ const initialData = [
         id: 18,
         name: "Jiyanshi Patel",
         motherId: 6,
-        husbandId: 17,
+        fatherId: 6,
         photo: female,
         DOB: '23-03-2016',
         place: 'Mumbai',
@@ -194,7 +194,7 @@ const initialData = [
     {
         id: 19,
         name: "Krishay Patel",
-        fatherId: 17,
+        fatherId: 6,
         motherId: 6,
         photo: Parent,
         DOB: '23-03-2018',
