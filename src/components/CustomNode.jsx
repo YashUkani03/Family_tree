@@ -26,7 +26,7 @@ const CustomNode = ({ nodeDatum, toggleNode }) => {
     return (
 
         <g>
-            <foreignObject x="-50" y="-90" className= {isMobile ? 'w-96' : "w-full"} height="180" >
+            <foreignObject x="-50" y="-90" className={isMobile ? 'w-96' : "w-full"} height="180" >
                 {
                     nodeDatum.spouse ? (
                         <div>
@@ -37,9 +37,16 @@ const CustomNode = ({ nodeDatum, toggleNode }) => {
                                 onClick={handleImageClick}
                             />
                         </div>
+                    ) : nodeDatum.husband ? (
+                        <div>
+                            <ParentCard
+                                father={nodeDatum.husband}
+                                mother={nodeDatum}
+                                onClick={handleImageClick}
+                            />
+                        </div>
                     ) : (
                         <div className="w-fit">
-
                             <Card
                                 src={nodeDatum.photo || '../images/P1.jpg'}
                                 name={nodeDatum.name}
@@ -51,7 +58,7 @@ const CustomNode = ({ nodeDatum, toggleNode }) => {
                     )}
 
             </foreignObject>
-
+        
             {nodeDatum.children && (
                 <polygon
                     points={collapsed

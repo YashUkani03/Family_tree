@@ -10,7 +10,7 @@ const initialData = [
         name: "Kanji Patel",
         spouseId: 4,
         photo: Profile,
-        DOB: '18-08-1975',
+        DOB: '18-08-1947',
         place: 'Gadhsisa',
         MaritalStatus: 'Married'
     },
@@ -20,58 +20,139 @@ const initialData = [
         fatherId: 1,
         spouseId: 5,
         photo: Pro,
-        DOB: '18-06-1998',
+        DOB: '18-06-1969',
         place: 'Mumbai',
         MaritalStatus: 'Married'
     },
     {
         id: 3,
-        name: "Minal Patel",
+        name: "Ranjan Patel",
         spouseId: 2,
         photo: female,
-        DOB: '18-08-1999',
+        DOB: '18-08-1970',
         place: 'Pune',
         MaritalStatus: 'Married'
     },
     {
         id: 4,
-        name: "Mina Patel",
+        name: "Kastur Patel",
         spouseId: 1,
         photo: female,
-        DOB: '18-08-1975',
+        DOB: '18-08-1950',
         place: 'Gadhsisa',
         MaritalStatus: 'Married'
     },
     {
-        id: 5,
-        name: "Kastur Patel",
-        spouseId: 2,
+        id: 6,
+        name: "Jinal Patel",
+        fatherId: 2,
+        spouseId: 17,
         photo: female,
-        DOB: '18-08-1998',
+        DOB: '23-03-1991',
         place: 'Mumbai',
-        MaritalStatus: 'Married'
+        MaritalStatus: 'Single'
     },
     {
-        id: 6,
-        name: "Yash Patel",
+        id: 17,
+        name: "Hitesh Patel",
+        husbandId: 6,
+        spouseId: 6,
+        photo: Profile,
+        DOB: '23-03-1990',
+        place: 'Mumbai',
+        MaritalStatus: 'Single'
+    },
+    {
+        id: 18,
+        name: "Jiyanshi Patel",
+        motherId: 6,
+        fatherId: 6,
+        photo: Profile,
+        DOB: '23-03-2016',
+        place: 'Mumbai',
+        MaritalStatus: 'Single'
+    },
+    {
+        id: 19,
+        name: "Krishay Patel",
+        fatherId: 6,
+        motherId: 6,
+        photo: Profile,
+        DOB: '23-03-2018',
+        place: 'Mumbai',
+        MaritalStatus: 'Single'
+    },
+    {
+        id: 14,
+        name: "Jayesh Patel",
         fatherId: 2,
-        photo: Parent,
+        spouseId: 16,
+        photo: Profile,
+        DOB: '23-03-1993',
+        place: 'Mumbai',
+        MaritalStatus: 'Single'
+
+    },
+    {
+        id: 16,
+        name: "Jigna Patel",
+        spouseId: 14,
+        photo: female,
+        DOB: '23-03-1993',
+        place: 'Mumbai',
+        MaritalStatus: 'Single'
+    },
+    {
+        id: 15,
+        name: "Priyam Patel",
+        fatherId: 14,
+        photo: Profile,
+        DOB: '23-03-2022',
+        place: 'Mumbai',
+        MaritalStatus: 'Single'
+    },
+    {
+        id: 24,
+        name: "Aayansh Patel",
+        fatherId: 14,
+        photo: Profile,
         DOB: '23-03-2024',
         place: 'Mumbai',
         MaritalStatus: 'Single'
     },
     {
         id: 7,
-        name: "Shreya Patel",
+        name: "Dhwani Patel",
         fatherId: 8,
-        photo: Parent,
-        DOB: '18-08-2023',
+        spouseId: 23,
+        photo: female,
+        DOB: '18-08-1997',
+        place: 'Gadhsisa',
+        MaritalStatus: 'Single'
+    },
+    {
+        id: 23,
+        name: "Smit Patel",
+        husbandId: 7,
+        spouseId: 7,
+        photo: Profile,
+        DOB: '18-08-1998',
+        place: 'Gadhsisa',
+        MaritalStatus: 'Single'
+    },
+    {
+        id: 18,
+        name: "Dixa Patel",
+        fatherId: 8,
+        motherId: 12,
+        photo: female,
+        DOB: '18-08-1999',
         place: 'Gadhsisa',
         MaritalStatus: 'Single'
     },
     {
         id: 8,
-        name: "Ramji Patel",
+        name: "Pravin Patel",
         fatherId: 1,
         spouseId: 12,
         photo: Pro,
@@ -81,54 +162,90 @@ const initialData = [
     },
     {
         id: 10,
-        name: "Manavi Patel",
+        name: "Yash Patel",
         fatherId: 8,
         photo: Parent,
-        DOB: '18-08-2023',
+        DOB: '23-03-2003',
         place: 'Gadhsisa',
         MaritalStatus: 'Single'
     },
     {
         id: 12,
-        name: "Ranjan Patel",
+        name: "Bhagvati Patel",
         spouseId: 8,
         photo: female,
-        DOB: '18-08-1998',
+        DOB: '18-08-1974',
         place: 'Gadhsisa',
         MaritalStatus: 'Married'
     },
     {
         id: 13,
-        name: "Manan Patel",
+        name: "Jenti Patel",
         photo: Pro,
         fatherId: 1,
-        spouseId: 14,
+        spouseId: 22,
         age: '',
         DOB: '18-08-1976',
         DOD: '' || '-',
         place: 'Pune',
         MaritalStatus: 'Married',
-    }, {
-        id: 14,
-        name: "Minal Patel",
+    },
+    {
+        id: 22,
+        name: "Hansa Patel",
         spouseId: 13,
         age: '',
         photo: female,
+        DOB: '18-08-1976',
+        DOD: '' || '-',
+        place: 'Pune',
+        MaritalStatus: 'Married',
+    },
+    {
+        id: 19,
+        name: "Kinjal Patel",
+        fatherId: 13,
+        spouseId: 20,
+        age: '',
+        photo: female,
+        DOB: '8-03-1998',
+        DOD: '' || '-',
+        place: 'Pune',
+        MaritalStatus: 'Married',
+    },
+    {
+        id: 15,
+        name: "Nimesh Patel",
+        fatherId: 13,
+        age: '',
+        photo: Parent,
+        DOB: '25-03-2000',
+        DOD: '' || '-',
+        place: 'Pune',
+        MaritalStatus: 'Married',
+    },
+    {
+        id: 20,
+        name: "Jaydeep Patel",
+        age: '',
+        spouseId: 19,
+        photo: Parent,
         DOB: '18-08-1999',
         DOD: '' || '-',
         place: 'Pune',
         MaritalStatus: 'Married',
-    }, {
-        id: 15,
-        name: "Ram Patel",
+    },
+    {
+        id: 21,
+        name: "Ayushi Patel",
         fatherId: 13,
         age: '',
-        photo: Parent,
-        DOB: '18-08-2022',
+        photo: female,
+        DOB: '08-02-2003',
         DOD: '' || '-',
         place: 'Pune',
         MaritalStatus: 'Married',
-    }
+    },
 ];
 
 const createFamilyTree = (data) => {
@@ -141,15 +258,22 @@ const createFamilyTree = (data) => {
     };
 
     const addChildren = (person) => {
-        person.children = data.filter(child => child.fatherId === person.id);
+        person.children = data.filter(child => child.fatherId === person.id || person.motherId === person.id);
     };
 
+
+    const addHusband = (person) => {
+        if (person.husbandId) {
+            person.husband = findPerson(person.husbandId);
+        }
+    }
     const rootPerson = findPerson(1); // Assuming Kanji Patel is the root person
     const stack = [rootPerson];
 
     while (stack.length > 0) {
         const person = stack.pop();
         addSpouse(person);
+        addHusband(person);
         addChildren(person);
         if (person.children) {
             stack.push(...person.children);

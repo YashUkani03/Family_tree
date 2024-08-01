@@ -36,7 +36,7 @@ const OrgChart = () => {
     }, []);
 
     const nodeSize = { x: 200, y: 200 };
-    const separation = { siblings: 1, nonSiblings: 2 };
+    const separation = { siblings: 1.5, nonSiblings: 1.5};
     return (
         <div 
             id="treeWrapper"
