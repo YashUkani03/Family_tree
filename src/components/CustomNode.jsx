@@ -35,14 +35,7 @@ const CustomNode = ({ nodeDatum, toggleNode }) => {
                                 father={nodeDatum}
                                 mother={nodeDatum.spouse}
                                 onClick={handleImageClick}
-                            />
-                        </div>
-                    ) : nodeDatum.husband ? (
-                        <div>
-                            <ParentCard
-                                father={nodeDatum.husband}
-                                mother={nodeDatum}
-                                onClick={handleImageClick}
+                                nodeData={nodeDatum}
                             />
                         </div>
                     ) : (
@@ -53,12 +46,13 @@ const CustomNode = ({ nodeDatum, toggleNode }) => {
                                 age={nodeDatum.place}
                                 child={nodeDatum}
                                 onClick={handleImageClick}
+                                isSpouse={nodeDatum.Gender}
                             />
                         </div>
                     )}
 
             </foreignObject>
-        
+
             {nodeDatum.children && (
                 <polygon
                     points={collapsed

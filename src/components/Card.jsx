@@ -6,12 +6,14 @@ const Card = ({ src,
     card,
     name = '',
     age = '',
+    isSpouse = '',
     ...props
 }) => {
     return (
         <>
-            <div className="w-auto h-min bg-white border border-gray-600 rounded-lg shadow">
-                <div className="flex flex-col  items-center pb-5 pt-3 px-4 bg-gray-100 rounded-lg" onClick={() => onClick(child)}>
+        
+            <div className="w-auto h-min bg-white border border-gray-800 rounded-lg shadow">
+                <div className={`flex flex-col  items-center pb-5 pt-3 px-4 rounded-lg  ${isSpouse === "F" ? 'bg-pink-100' : 'bg-blue-100'}`} onClick={() => onClick(child)}>
                     <img className="w-16 h-14 mb-3 rounded-full shadow-lg border-black"
                         src={src}
                         alt={`${name}photo `}

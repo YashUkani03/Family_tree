@@ -12,7 +12,8 @@ const initialData = [
         photo: Profile,
         DOB: '18-08-1947',
         place: 'Gadhsisa',
-        MaritalStatus: 'Married'
+        MaritalStatus: 'Married',
+        Gender: 'M'
     },
     {
         id: 25,
@@ -25,6 +26,7 @@ const initialData = [
         DOD: '' || '-',
         place: 'Pune',
         MaritalStatus: 'Married',
+        Gender: 'F'
     },
     {
         id: 26,
@@ -37,6 +39,7 @@ const initialData = [
         DOD: '' || '-',
         place: 'Pune',
         MaritalStatus: 'Married',
+        Gender: 'M'
     },
     {
         id: 27,
@@ -48,6 +51,7 @@ const initialData = [
         DOD: '' || '-',
         place: 'Pune',
         MaritalStatus: 'Married',
+        Gender: 'M'
     },
     {
         id: 28,
@@ -59,6 +63,7 @@ const initialData = [
         DOD: '' || '-',
         place: 'Pune',
         MaritalStatus: 'Married',
+        Gender: 'F'
     },
     {
         id: 31,
@@ -70,6 +75,7 @@ const initialData = [
         DOD: '' || '-',
         place: 'Pune',
         MaritalStatus: 'Married',
+        Gender: 'M'
     },
     {
         id: 32,
@@ -81,6 +87,7 @@ const initialData = [
         DOD: '' || '-',
         place: 'Pune',
         MaritalStatus: 'Married',
+        Gender: 'M'
     },
     {
         id: 29,
@@ -93,6 +100,7 @@ const initialData = [
         DOD: '' || '-',
         place: 'Pune',
         MaritalStatus: 'Married',
+        Gender: 'M'
     },
     {
         id: 30,
@@ -104,6 +112,7 @@ const initialData = [
         DOD: '' || '-',
         place: 'Pune',
         MaritalStatus: 'Married',
+        Gender: 'F'
     },
     {
         id: 31,
@@ -115,6 +124,7 @@ const initialData = [
         DOD: '' || '-',
         place: 'Pune',
         MaritalStatus: 'Married',
+        Gender: 'M'
     },
     {
         id: 2,
@@ -124,7 +134,8 @@ const initialData = [
         photo: Pro,
         DOB: '18-06-1969',
         place: 'Mumbai',
-        MaritalStatus: 'Married'
+        MaritalStatus: 'Married',
+        Gender: 'M'
     },
     {
         id: 3,
@@ -133,7 +144,8 @@ const initialData = [
         photo: female,
         DOB: '18-08-1970',
         place: 'Pune',
-        MaritalStatus: 'Married'
+        MaritalStatus: 'Married',
+        Gender: 'F'
     },
     {
         id: 4,
@@ -142,7 +154,8 @@ const initialData = [
         photo: female,
         DOB: '18-08-1950',
         place: 'Gadhsisa',
-        MaritalStatus: 'Married'
+        MaritalStatus: 'Married',
+        Gender: 'F'
     },
     {
         id: 6,
@@ -152,37 +165,42 @@ const initialData = [
         photo: female,
         DOB: '23-03-1991',
         place: 'Mumbai',
-        MaritalStatus: 'Single'
+        MaritalStatus: 'Married',
+        Gender: 'F',
+        husband: 17,
     },
     {
+        husbandId: 6,
         id: 17,
         name: "Hitesh Patel",
-        husbandId: 6,
-        spouseId: 6,
         photo: Profile,
         DOB: '23-03-1990',
         place: 'Mumbai',
-        MaritalStatus: 'Single'
+        MaritalStatus: 'Married',
+        Gender: 'M'
     },
     {
         id: 18,
         name: "Jiyanshi Patel",
         motherId: 6,
-        fatherId: 6,
+        husbandId: 17,
         photo: female,
         DOB: '23-03-2016',
         place: 'Mumbai',
-        MaritalStatus: 'Single'
+        MaritalStatus: 'Single',
+        Gender: 'F',
+
     },
     {
         id: 19,
         name: "Krishay Patel",
-        fatherId: 6,
+        fatherId: 17,
         motherId: 6,
         photo: Parent,
         DOB: '23-03-2018',
         place: 'Mumbai',
-        MaritalStatus: 'Single'
+        MaritalStatus: 'Single',
+        Gender: 'M',
     },
     {
         id: 14,
@@ -192,8 +210,8 @@ const initialData = [
         photo: Profile,
         DOB: '23-03-1993',
         place: 'Mumbai',
-        MaritalStatus: 'Single'
-
+        MaritalStatus: 'Married',
+        Gender: 'M'
     },
     {
         id: 16,
@@ -202,7 +220,8 @@ const initialData = [
         photo: female,
         DOB: '23-03-1993',
         place: 'Mumbai',
-        MaritalStatus: 'Single'
+        MaritalStatus: 'Married',
+        Gender: 'F',
     },
     {
         id: 15,
@@ -211,7 +230,8 @@ const initialData = [
         photo: Parent,
         DOB: '23-03-2022',
         place: 'Mumbai',
-        MaritalStatus: 'Single'
+        MaritalStatus: 'Single',
+        Gender: 'M',
     },
     {
         id: 24,
@@ -220,7 +240,8 @@ const initialData = [
         photo: Parent,
         DOB: '23-03-2024',
         place: 'Mumbai',
-        MaritalStatus: 'Single'
+        MaritalStatus: 'Single',
+        Gender: 'M',
     },
     {
         id: 7,
@@ -230,7 +251,8 @@ const initialData = [
         photo: female,
         DOB: '18-08-1997',
         place: 'Gadhsisa',
-        MaritalStatus: 'Single'
+        MaritalStatus: 'Married',
+        Gender: 'F',
     },
     {
         id: 23,
@@ -240,7 +262,8 @@ const initialData = [
         photo: Profile,
         DOB: '18-08-1998',
         place: 'Gadhsisa',
-        MaritalStatus: 'Single'
+        MaritalStatus: 'Married',
+        Gender: 'M',
     },
     {
         id: 18,
@@ -250,7 +273,8 @@ const initialData = [
         photo: female,
         DOB: '18-08-1999',
         place: 'Gadhsisa',
-        MaritalStatus: 'Single'
+        MaritalStatus: 'Single',
+        Gender: 'F',
     },
     {
         id: 8,
@@ -260,7 +284,8 @@ const initialData = [
         photo: Pro,
         DOB: '18-08-1975',
         place: 'Gadhsisa',
-        MaritalStatus: 'Married'
+        MaritalStatus: 'Married',
+        Gender: 'M'
     },
     {
         id: 10,
@@ -269,7 +294,8 @@ const initialData = [
         photo: Parent,
         DOB: '23-03-2003',
         place: 'Gadhsisa',
-        MaritalStatus: 'Single'
+        MaritalStatus: 'Single',
+        Gender: 'M',
     },
     {
         id: 12,
@@ -278,7 +304,8 @@ const initialData = [
         photo: female,
         DOB: '18-08-1974',
         place: 'Gadhsisa',
-        MaritalStatus: 'Married'
+        MaritalStatus: 'Married',
+        Gender: 'F'
     },
     {
         id: 13,
@@ -291,6 +318,7 @@ const initialData = [
         DOD: '' || '-',
         place: 'Pune',
         MaritalStatus: 'Married',
+        Gender: 'M'
     },
     {
         id: 22,
@@ -302,6 +330,7 @@ const initialData = [
         DOD: '' || '-',
         place: 'Pune',
         MaritalStatus: 'Married',
+        Gender: 'F'
     },
     {
         id: 19,
@@ -314,6 +343,7 @@ const initialData = [
         DOD: '' || '-',
         place: 'Pune',
         MaritalStatus: 'Married',
+        Gender: 'F'
     },
     {
         id: 15,
@@ -325,6 +355,7 @@ const initialData = [
         DOD: '' || '-',
         place: 'Pune',
         MaritalStatus: 'Married',
+        Gender: 'M'
     },
     {
         id: 20,
@@ -336,6 +367,7 @@ const initialData = [
         DOD: '' || '-',
         place: 'Pune',
         MaritalStatus: 'Married',
+        Gender: 'M'
     },
     {
         id: 21,
@@ -347,6 +379,7 @@ const initialData = [
         DOD: '' || '-',
         place: 'Pune',
         MaritalStatus: 'Married',
+        Gender: 'F'
     },
 ]
 const createFamilyTree = (data) => {
@@ -362,13 +395,16 @@ const createFamilyTree = (data) => {
         person.children = data.filter(child => child.fatherId === person.id || person.motherId === person.id);
     };
 
-
     const addHusband = (person) => {
+        console.log(person.husbandId);
         if (person.husbandId) {
             person.husband = findPerson(person.husbandId);
+            addChildren(person.husband);
         }
-    }
-    const rootPerson = findPerson(1); // Assuming Kanji Patel is the root person
+    };
+
+
+    const rootPerson = findPerson(1);
     const stack = [rootPerson];
 
     while (stack.length > 0) {

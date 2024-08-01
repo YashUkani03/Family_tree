@@ -43,6 +43,7 @@ const OrgChart = () => {
             ref={treeContainer}
             style= {{ width: '100%', height: '100%', border: '1px solid black' }}
         >
+            <div className='text-4xl italic font-sans text-center underline'>Kanji Valji Ukani Parivar</div>
             <Tree
                 data={preprocessedData}
                 nodeSize={nodeSize}
