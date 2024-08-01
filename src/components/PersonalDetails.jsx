@@ -16,7 +16,7 @@ const PersonDetailsModal = ({ isOpen, onRequestClose, person }) => {
             padding={15}
             style={{
                 content: {
-                    top: '40%',
+                    top: '45%',
                     backgroundColor: 'white',
                     left: '50%',
                     right: '80%',
